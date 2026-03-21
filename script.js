@@ -41,7 +41,7 @@ const chaiStyle = {
   "chai-block": { display: "block" },
   "chai-flex": { display: "flex" },
 
-  // Flex helpers
+  // Flex gap
   "chai-gap-2": { gap: "8px" },
 
   // Width
