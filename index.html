@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Chai TailwindUI</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #e5e5e5;
+      font-family: Verdana, sans-serif;
+      padding: 24px;
+    }
+
+    .tagName {
+      font-size: 11px;
+      color: #555;
+      margin-bottom: 4px;
+    }
+
+    .row {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="row">
+    <p class="tagName">heading</p>
+    <h1 class="chai chai-text-xl chai-font-bold chai-text-blue">Chai TailwindUI</h1>
+  </div>
+
+  <div class="row">
+    <p class="tagName">paragraph</p>
+    <p class="chai chai-text-sm chai-text-gray">Simple utility classes applied with JS.</p>
+  </div>
+
+  <div class="row">
+    <p class="tagName">div tag</p>
+    <div class="chai chai-bg-card chai-p-4 chai-rounded">
+      This is a card div.
+    </div>
+  </div>
+
+  <div class="row">
+    <p class="tagName">button</p>
+    <button class="chai chai-bg-indigo chai-text-white chai-p-2 chai-rounded chai-pointer">Click Me</button>
+  </div>
+
+  <div class="row">
+    <p class="tagName">span tag</p>
+    <span class="chai chai-bg-green chai-text-white chai-p-2 chai-rounded-full chai-text-xs">Active</span>
+    <span class="chai chai-bg-red chai-text-white chai-p-2 chai-rounded-full chai-text-xs"
+      style="margin-left:8px;">Error</span>
+  </div>
+
+  <div class="row">
+    <p class="tagName">Input tag</p>
+    <input type="text" placeholder="Type here..."
+      class="chai chai-block chai-w-full chai-p-3 chai-rounded chai-bg-surface"
+      style="color:#e5e5e5; border: 1px solid #374151;" />
+  </div>
+
+  <div class="row">
+    <p class="tagName">Lists </p>
+    <ul style="padding-left: 18px;">
+      <li class="chai chai-text-sm chai-text-green">Zero dependencies</li>
+      <li class="chai chai-text-sm chai-text-green" style="margin-top:4px;">No build step</li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <p class="tagName">Link Tag</p>
+    <a class="chai chai-text-blue" href="https://github.com/SaurabhRavte">GitHub</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
