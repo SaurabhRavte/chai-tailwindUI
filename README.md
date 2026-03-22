@@ -10,6 +10,8 @@
 
 ![chai-tailwindUI preview](./screenshot/ui.png)
 
+![chai-tailwindUI preview2](./screenshot/ui-v1.png)
+
 ---
 
 ## 📁 Project Structure

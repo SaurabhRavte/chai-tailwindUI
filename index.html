@@ -2,80 +2,145 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Chai TailwindUI</title>
+  <title>ChaiCSS</title>
   <style>
     body {
-      background-color: #121212;
-      color: #e5e5e5;
-      font-family: Verdana, sans-serif;
-      padding: 24px;
+      background-color: #0d0d0f;
+      color: #e2e2ef;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 32px;
     }
 
-    .tagName {
+    .label {
       font-size: 11px;
       color: #555;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
     }
 
     .row {
-      margin-top: 20px;
+      margin-top: 24px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #1e1e2a;
+      margin: 32px 0;
     }
   </style>
 </head>
 
 <body>
 
+  <h1 class="chai chai-text-xl chai-font-bold chai-text-white">ChaiCSS</h1>
+  <p class="chai chai-text-sm chai-text-gray chai-mt-2">Utility classes applied at runtime — no build step, no config,
+    just JS.</p>
+
+  <hr>
+
+  <!-- Headings -->
   <div class="row">
-    <p class="tagName">heading</p>
-    <h1 class="chai chai-text-xl chai-font-bold chai-text-blue">Chai TailwindUI</h1>
+    <p class="label">h1 — heading</p>
+    <h1 class="chai chai-text-xl chai-font-bold chai-text-blue">Page Heading</h1>
   </div>
 
   <div class="row">
-    <p class="tagName">paragraph</p>
-    <p class="chai chai-text-sm chai-text-gray">Simple utility classes applied with JS.</p>
+    <p class="label">h2 — subheading</p>
+    <h2 class="chai chai-text-lg chai-font-semibold chai-text-white">Section Subheading</h2>
   </div>
 
   <div class="row">
-    <p class="tagName">div tag</p>
+    <p class="label">p — paragraph</p>
+    <p class="chai chai-text-sm chai-text-gray">This is a paragraph using chai-text-sm and chai-text-gray.</p>
+  </div>
+
+  <div class="row">
+    <p class="label">p — caption</p>
+    <p class="chai chai-text-xs chai-text-muted">Small caption text using chai-text-xs and chai-text-muted.</p>
+  </div>
+
+  <hr>
+
+  <!-- Text sizes -->
+  <div class="row">
+    <p class="label">text sizes</p>
+    <p class="chai chai-text-xs chai-text-white">chai-text-xs — 11px</p>
+    <p class="chai chai-text-sm chai-text-white chai-mt-2">chai-text-sm — 13px</p>
+    <p class="chai chai-text-md chai-text-white chai-mt-2">chai-text-md — 15px</p>
+    <p class="chai chai-text-lg chai-text-white chai-mt-2">chai-text-lg — 18px</p>
+    <p class="chai chai-text-xl chai-font-bold chai-text-white chai-mt-2">chai-text-xl — 22px</p>
+  </div>
+
+  <hr>
+
+  <!-- Border radius -->
+  <div class="row">
+    <p class="label">border radius</p>
+    <span class="chai chai-bg-indigo chai-text-white chai-p-2 chai-rounded-sm">rounded-sm</span>
+    <span class="chai chai-bg-indigo chai-text-white chai-p-2 chai-rounded chai-mt-2">rounded</span>
+    <span class="chai chai-bg-indigo chai-text-white chai-p-2 chai-rounded-lg chai-mt-2">rounded-lg</span>
+    <span class="chai chai-bg-indigo chai-text-white chai-p-2 chai-rounded-full chai-mt-2">rounded-full</span>
+  </div>
+
+  <hr>
+
+  <!-- Buttons -->
+  <div class="row">
+    <p class="label">button</p>
+    <button class="chai chai-bg-indigo chai-text-white chai-p-2 chai-rounded chai-pointer">Primary</button>
+    <button class="chai chai-bg-green chai-text-white chai-p-2 chai-rounded chai-pointer chai-mt-2">Success</button>
+    <button class="chai chai-bg-red chai-text-white chai-p-2 chai-rounded chai-pointer chai-mt-2">Danger</button>
+  </div>
+
+  <hr>
+
+  <!-- Badges -->
+  <div class="row">
+    <p class="label">span — badges</p>
+    <span class="chai chai-bg-green chai-text-white chai-p-1 chai-rounded-full chai-text-xs">Active</span>
+    <span class="chai chai-bg-red chai-text-white chai-p-1 chai-rounded-full chai-text-xs chai-mt-2">Error</span>
+    <span class="chai chai-bg-indigo chai-text-white chai-p-1 chai-rounded-full chai-text-xs chai-mt-2">Beta</span>
+  </div>
+
+  <hr>
+
+  <!-- Card -->
+  <div class="row">
+    <p class="label">div — card</p>
     <div class="chai chai-bg-card chai-p-4 chai-rounded">
-      This is a card div.
+      <p class="chai chai-text-sm chai-font-semibold chai-text-white">Card Title</p>
+      <p class="chai chai-text-xs chai-text-gray chai-mt-2">This card uses chai-bg-card, chai-p-4, and chai-rounded.</p>
     </div>
   </div>
 
-  <div class="row">
-    <p class="tagName">button</p>
-    <button class="chai chai-bg-indigo chai-text-white chai-p-2 chai-rounded chai-pointer">Click Me</button>
-  </div>
+  <hr>
 
+  <!-- Input -->
   <div class="row">
-    <p class="tagName">span tag</p>
-    <span class="chai chai-bg-green chai-text-white chai-p-2 chai-rounded-full chai-text-xs">Active</span>
-    <span class="chai chai-bg-red chai-text-white chai-p-2 chai-rounded-full chai-text-xs"
-      style="margin-left:8px;">Error</span>
-  </div>
-
-  <div class="row">
-    <p class="tagName">Input tag</p>
+    <p class="label">input</p>
     <input type="text" placeholder="Type here..."
-      class="chai chai-block chai-w-full chai-p-3 chai-rounded chai-bg-surface"
-      style="color:#e5e5e5; border: 1px solid #374151;" />
+      class="chai chai-block chai-w-full chai-p-2 chai-rounded chai-bg-surface chai-text-white chai-border" />
   </div>
 
+  <hr>
+
+  <!-- List -->
   <div class="row">
-    <p class="tagName">Lists </p>
-    <ul style="padding-left: 18px;">
-      <li class="chai chai-text-sm chai-text-green">Zero dependencies</li>
-      <li class="chai chai-text-sm chai-text-green" style="margin-top:4px;">No build step</li>
+    <p class="label">ul — list</p>
+    <ul class="chai chai-list-style chai-text-sm chai-text-green">
+      <li>Zero dependencies</li>
+      <li>No build step</li>
+      <li>Vanilla JS only</li>
     </ul>
   </div>
 
+  <hr>
+
+  <!-- Link -->
   <div class="row">
-    <p class="tagName">Link Tag</p>
-    <a class="chai chai-text-blue" href="https://github.com/SaurabhRavte">GitHub</a>
+    <p class="label">a — link</p>
+    <a class="chai chai-text-blue chai-text-sm" href="https://github.com/SaurabhRavte">github.com/SaurabhRavte →</a>
   </div>
 
   <script src="script.js"></script>
